@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas';
-// import { repeat } from 'math/dist/declarations/src/misc';
+// import { repeat } from 'maath/dist/declarations/src/misc';
 
 const Hero = () => {
   return (
