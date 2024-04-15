@@ -1,7 +1,7 @@
-import React, { Suspense, useEffect, useState } from "react";
+import  { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
+import PropTypes from 'prop-types';
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
@@ -17,7 +17,6 @@ const Computers = ({ isMobile }) => {
         intensity={1}
         castShadow
         shadow-mapSize={1024}
-     
       />
       <pointLight intensity={1} />
       <primitive
@@ -74,6 +73,11 @@ const ComputersCanvas = () => {
       <Preload all />
     </Canvas>
   );
+
+
 };
 
+Computers.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+};
 export default ComputersCanvas;
