@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable  */
 import { Tilt } from "react-tilt";
 
 import { motion } from "framer-motion";

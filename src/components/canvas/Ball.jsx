@@ -1,3 +1,6 @@
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable no-undef */
+
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
@@ -7,7 +10,7 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
-
+import PropTypes from 'prop-types';
 import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
@@ -37,6 +40,10 @@ const Ball = (props) => {
   );
 };
 
+Ball.propTypes = {
+  imgUrl: PropTypes.string.isRequired,
+};
+
 const BallCanvas = ({ icon }) => {
   return (
     <Canvas
@@ -52,6 +59,10 @@ const BallCanvas = ({ icon }) => {
       <Preload all />
     </Canvas>
   );
+};
+
+BallCanvas.propTypes = {
+  icon: PropTypes.string.isRequired,
 };
 
 export default BallCanvas;
