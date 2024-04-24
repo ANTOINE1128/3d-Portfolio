@@ -48,10 +48,16 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled full stack software developer with experience in Javascript and ruby , and expertise in frameworks like React, rubyonrails, and
-        Three.js. I'm a quick learner and collaborate closely with teammates and clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring life to your ideas!
+        As a Full Stack Developer, I bring a unique blend of experiences from my previous roles in the maritime industry and as a Mandarin teacher & translator. I was previously an Educational Mentor at Microverse, a remote software development organization, where I've completed over 40 real-life projects, mastering both front-end and back-end technologies.<br /><br />
+
+During the course of this journey, I had the privilege to meet 300+ Full Stack Developers, investing over 1300 hours on mastering data structures and algorithms. What's more, I built a community of 150+ fellow Full Stack Developers which I am currently administering. I also mentored a small team of 5 junior developers. 🚀💡👥<br /><br />
+
+In my latest capstone project, I spearheaded the development of a comprehensive web interface for a logistics firm. Both front-end and back-end, showcasing my proficiency in HTML/CSS, JavaScript, React, Redux, Ruby, Rails, and PostgreSQL. Combining my passion for languages with my love for coding, I crafted a seamless user experience that I'm truly proud of.
+<br /><br />
+🔧 Front-End: JavaScript, React, Redux, jQuery, HTML5, CSS3, SCSS, MaterialUI, Tailwind<br />
+⚙️ Back-End: Ruby, Ruby on Rails, Capybara, Devise, PostgreSQL<br />
+🛠️ Tools & Methods: Git, Github, TDD, Chrome Dev Tools<br />
+💼 Professional Skills: Remote Pair-Programming, System Designing, Architecture, Mentoring, Planning<br /><br />
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
