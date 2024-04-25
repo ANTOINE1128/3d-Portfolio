@@ -1,9 +1,7 @@
-
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, live_demo } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -16,7 +14,10 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_demo_link,
 }) => {
+  const showLiveDemo = live_demo_link !== undefined && live_demo_link !== '';
+  const showSource_code_link = source_code_link !== undefined && source_code_link !== '';  
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -27,7 +28,7 @@ const ProjectCard = ({
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
+        <div className=' w-full '>
           <img
             src={image}
             alt='project_image'
@@ -35,6 +36,7 @@ const ProjectCard = ({
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+            {showSource_code_link && (
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
@@ -45,6 +47,19 @@ const ProjectCard = ({
                 className='w-1/2 h-1/2 object-contain'
               />
             </div>
+            )}
+            {showLiveDemo && (
+              <div
+                onClick={() => window.open(live_demo_link, "_blank")}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              >
+                <img
+                  src={live_demo}
+                  alt='source code'
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
+            )}
           </div>
         </div>
 
@@ -66,6 +81,21 @@ const ProjectCard = ({
       </Tilt>
     </motion.div>
   );
+};
+
+ProjectCard.propTypes = {
+  index: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  image: PropTypes.string.isRequired,
+  source_code_link: PropTypes.string.isRequired,
+  live_demo_link: PropTypes.string,
 };
 
 const Works = () => {
@@ -96,20 +126,6 @@ const Works = () => {
       </div>
     </>
   );
-};
-
-ProjectCard.propTypes = {
-  index: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  tags: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      color: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-  image: PropTypes.string.isRequired,
-  source_code_link: PropTypes.string.isRequired,
 };
 
 export default SectionWrapper(Works, "");

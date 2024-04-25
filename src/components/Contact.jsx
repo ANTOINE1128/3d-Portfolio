@@ -30,19 +30,19 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-
+    {/* c-6i4os0XmWvHuOaV */}
+  {/* template_hfcojw4 */}
+  {/* service_rpycahp */}
     emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+      .send('service_rpycahp', 'template_hfcojw4',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Antoine Makdessy",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "makdessyantoine@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'c-6i4os0XmWvHuOaV'
       )
       .then(
         () => {
@@ -122,7 +122,6 @@ const Contact = () => {
           </button>
         </form>
       </motion.div>
-
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'

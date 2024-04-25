@@ -48,11 +48,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        As a Full Stack Developer, I bring a unique blend of experiences from my previous roles in the maritime industry and as a Mandarin teacher & translator. I was previously an Educational Mentor at Microverse, a remote software development organization, where I've completed over 40 real-life projects, mastering both front-end and back-end technologies.<br /><br />
+      Full Stack Developer driven by a genuine passion for excellence and coding. Proficient in a spectrum of languages including JavaScript, React, Redux, Ruby, and Ruby on Rails, with over 30 completed projects while making impactful contributions to open-source ventures. Committed to continuous improvement, investing tirelessly in sharpening skills daily and  exploring new technologies (Three.js, etc). Acquiring high career aspirations tempered by humility and a strong work ethic, while supporting the perpetual pursuit of knowledge as the key to long-term success in life and career.
+<br /><br />
 
-During the course of this journey, I had the privilege to meet 300+ Full Stack Developers, investing over 1300 hours on mastering data structures and algorithms. What's more, I built a community of 150+ fellow Full Stack Developers which I am currently administering. I also mentored a small team of 5 junior developers. 🚀💡👥<br /><br />
+During the course of this journey, I had the privilege to meet 300+ Full Stack Developers, investing over 1300 hours on mastering data structures and algorithms. What's more, I built a community of 150+ fellow Full Stack Developers which I am currently administering. I also mentored  20 junior developers. 🚀💡👥<br /><br />
 
-In my latest capstone project, I spearheaded the development of a comprehensive web interface for a logistics firm. Both front-end and back-end, showcasing my proficiency in HTML/CSS, JavaScript, React, Redux, Ruby, Rails, and PostgreSQL. Combining my passion for languages with my love for coding, I crafted a seamless user experience that I'm truly proud of.
+In my latest capstone project, I spearheaded the development of a comprehensive web interface for a BookADoctor firm. Both front-end and back-end, showcasing my proficiency in HTML/CSS, JavaScript, React, Redux, Ruby, Rails, and PostgreSQL. Combining my passion for languages with my love for coding, I crafted a seamless user experience that I'm truly proud of.
 <br /><br />
 🔧 Front-End: JavaScript, React, Redux, jQuery, HTML5, CSS3, SCSS, MaterialUI, Tailwind<br />
 ⚙️ Back-End: Ruby, Ruby on Rails, Capybara, Devise, PostgreSQL<br />
