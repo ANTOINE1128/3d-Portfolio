@@ -152,9 +152,9 @@ const testimonials = [
     testimonial:
       "Working with Antoine was a fantastic experience. He transformed our Point of Sales Web App with a touch of magic, making it faster, more reliable, and easy to use. Now, managing our shop's data feels like a breeze, thanks to his expertise in setting up secure server systems. I couldn't be happier with the results!",
     name: "Peter Merched",
-    designation: "owner",
+    designation: "Owner",
     company: "of Australian Imports",
-    image: "australianimport",
+    image: australianimport,
   },
   {
     testimonial:
