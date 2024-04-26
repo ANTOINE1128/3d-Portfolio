@@ -150,27 +150,28 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Working with Antoine was a fantastic experience. He transformed our Point of Sales Web App with a touch of magic, making it faster, more reliable, and easy to use. Now, managing our shop's data feels like a breeze, thanks to his expertise in setting up secure server systems. I couldn't be happier with the results!",
+    name: "Peter Merched",
+    designation: "owner",
+    company: "of Australian Imports",
+    image: "australianimport",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "I worked with Antonie on a challenging Rails project. Antonie's ability to remain calm under pressure sets him apart as an exceptional professional. Throughout the project, even during tight deadlines and unexpected challenges, Antonie exhibited a remarkable composure that positively influenced our collaboration."
+      ,
+    name: "Tanmayi Manku",
+    designation: "Full Stack Software Developer",
+    company: "",
+    image: "https://media.licdn.com/dms/image/D5603AQEnrTWyhnxJyg/profile-displayphoto-shrink_100_100/0/1693565489994?e=1719446400&v=beta&t=I3jEMPIDsXmYpEjfXI6o-41rNH9kIXDrmtTTwLe7z8o",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Antoine's expertise and coding background laid a strong foundation for our success. His knack for simplifying complex concepts fueled our progress. Besides technical prowess, his communication and collaboration skills were invaluable. Antoine's proactive problem-solving greatly enriched our partnership. He'd undoubtedly excel as a coding partner for anyone lucky enough to collaborate with him",
+    name: "Habtamu (ቤናዊ) Alemayehu",
+    designation: "Full Stack Software Developer",
+    company: " at Lois Smart IT Solutions",
+    image: "https://media.licdn.com/dms/image/C5603AQGLi6NIINm-BQ/profile-displayphoto-shrink_100_100/0/1630449667593?e=1719446400&v=beta&t=c0hF8iDG5VFGjmWSI8IRn-nTqXDQh6zFWyUNdXe-wsE",
   },
 ];
 
@@ -178,7 +179,7 @@ const projects = [
   {
     name: "Book A Doctor",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform designed for users to view doctor qualifications, experience and schedule appointments seamlessly",
     tags: [
       {
         name: "React",
