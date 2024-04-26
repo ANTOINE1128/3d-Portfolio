@@ -56,6 +56,9 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
+    <div className="w-full h-full"
+    title="Rotate: Left-click. Move: Right-click."
+    >
     <Canvas
       frameloop='demand'
       shadows
@@ -74,6 +77,7 @@ const ComputersCanvas = () => {
 
       <Preload all />
     </Canvas>
+    </div>
   );
 
 

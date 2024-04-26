@@ -30,9 +30,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    {/* c-6i4os0XmWvHuOaV */}
-  {/* template_hfcojw4 */}
-  {/* service_rpycahp */}
     emailjs
       .send('service_rpycahp', 'template_hfcojw4',
         {
@@ -67,6 +64,7 @@ const Contact = () => {
   return (
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      title='Rotate: Left-click. Move: Right-click.'
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
