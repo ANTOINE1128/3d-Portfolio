@@ -15,7 +15,6 @@ import {
   figma,
   ubuntu,
   microverse,
-  hacked,
   australianimport,
   bookadoctor,
   spacetravel,
@@ -23,6 +22,8 @@ import {
   threejs,
   tan,
   hab,
+  logo,
+  
 } from "../assets";
 
 export const navLinks = [
@@ -112,19 +113,20 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Full Stack Developer",
-    company_name: "MICROVERSE",
-    icon: microverse,
-    iconBg: "#6F23FF",
-    date: "March 2023 – Present",
+    title: "I.T. TECHNICAL SUPPORT ",
+    company_name: "Self-employment",
+    icon: logo,
+    iconBg: "#fff",
+    date: "Jan 2020 - March 2023",
     points: [
-      "Mentored 20 Junior Web Developers, providing comprehensive technical guidance (e.g., code reviewing, feedback provision, etc.) and hands-on program oversight.",
-      "Offered technical and mental advice on maintaining motivation and program longevity to 20+ Micronauts.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Supported 100+ Micronauts through code reviews.","Proposed code organization enhancements, boosting quality and performance by 25%"
+      "Delivered comprehensive software solutions to over 150 clients, including the installation and maintenance of 50+ point-of-sales (POS) systems, enhancing operational efficiency for retail businesses.",
+      "Developed and implemented an appointment booking system, streamlining the scheduling process for clients and improving user experience.",
+      "Assisted with the maintenance and troubleshooting of a delivery application (dailyvery), ensuring consistent performance and addressing technical issues to minimize downtime.",
+      "Installed and configured CCTV systems for clients, enhancing security and surveillance capabilities.",
+      "Provided technical support and resolved computer issues, repaired hardware, and evaluated software and hardware solutions to meet client needs effectively.",
     ],
   },
-  {
+    {
     title: "Web Developer",
     company_name: "Australian Imports",
     icon: australianimport,
@@ -135,18 +137,20 @@ const experiences = [
       "Collaborating with cross-functional teams including IT teams and other developers to maintain a high-quality Web App."
     ],
   },
+
   {
-    title: "Hacked Legally  I.T. Shop ",
-    company_name: "Hacked",
-    icon: hacked,
-    iconBg: "#fff",
-    date: "Jan 2020 - March 2023",
+    title: "Full Stack Developer",
+    company_name: "MICROVERSE",
+    icon: microverse,
+    iconBg: "#6F23FF",
+    date: "March 2023 – December 2023",
     points: [
-      "Fixed troubleshooting computer issues and providing technical support to clients.",
-      "Repaired and replaced hardware parts in computers and physical networks",
-      "Tested and evaluated software and hardware solutions.",
+      "Mentored 20 Junior Web Developers, providing comprehensive technical guidance (e.g., code reviewing, feedback provision, etc.) and hands-on program oversight.",
+      "Offered technical and mental advice on maintaining motivation and program longevity to 20+ Micronauts.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Supported 100+ Micronauts through code reviews.","Proposed code organization enhancements, boosting quality and performance by 25%"
     ],
-  }
+  },
 ];
 
 const testimonials = [
