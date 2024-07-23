@@ -117,7 +117,7 @@ const experiences = [
     company_name: "Self-employment",
     icon: logo,
     iconBg: "#fff",
-    date: "Jan 2020 - March 2023",
+    date: "Jan 2020 - Present",
     points: [
       "Delivered comprehensive software solutions to over 150 clients, including the installation and maintenance of 50+ point-of-sales (POS) systems, enhancing operational efficiency for retail businesses.",
       "Developed and implemented an appointment booking system, streamlining the scheduling process for clients and improving user experience.",
