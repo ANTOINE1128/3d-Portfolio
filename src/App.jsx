@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { textureLoader, gltfLoader, loadingManager } from './loader';
+import { textureLoader,  loadingManager } from './loader';
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components';
+import './index.css';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
