@@ -21,6 +21,8 @@ import {
   spacetravel,
   australianimports_web,
   threejs,
+  tan,
+  hab,
 } from "../assets";
 
 export const navLinks = [
@@ -163,7 +165,7 @@ const testimonials = [
     name: "Tanmayi Manku",
     designation: "Full Stack Software Developer",
     company: "",
-    image: "https://media.licdn.com/dms/image/D5603AQEnrTWyhnxJyg/profile-displayphoto-shrink_100_100/0/1693565489994?e=1719446400&v=beta&t=I3jEMPIDsXmYpEjfXI6o-41rNH9kIXDrmtTTwLe7z8o",
+    image: tan,
   },
   {
     testimonial:
@@ -171,7 +173,7 @@ const testimonials = [
     name: "Habtamu (ቤናዊ) Alemayehu",
     designation: "Full Stack Software Developer",
     company: " at Lois Smart IT Solutions",
-    image: "https://media.licdn.com/dms/image/C5603AQGLi6NIINm-BQ/profile-displayphoto-shrink_100_100/0/1630449667593?e=1719446400&v=beta&t=c0hF8iDG5VFGjmWSI8IRn-nTqXDQh6zFWyUNdXe-wsE",
+    image: hab,
   },
 ];
 

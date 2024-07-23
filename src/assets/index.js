@@ -22,7 +22,9 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
- import australianimport from "./company/australianimport.png";
+import australianimport from "./company/australianimport.png";
+import hab from "./company/hab.jpg";
+import tan from "./company/tan.jpg";
 
 import microverse from "./company/microverse.png";
 import hacked from "./company/hacked.png";
@@ -55,6 +57,8 @@ export {
   typescript,
   threejs,
   australianimport,
+  hab,
+  tan,
   microverse,
   hacked,
   bookadoctor,
