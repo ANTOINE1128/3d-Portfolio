@@ -1,18 +1,38 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components';
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { textureLoader, gltfLoader, loadingManager } from './loader';
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Example of loading resources
-    textureLoader.load('path/to/your/texture.jpg');
-    gltfLoader.load('path/to/your/model.gltf', (gltf) => {
-      // You can store the loaded model in a state or context if needed
-      console.log('Model loaded', gltf);
-    });
+    // Load textures
+    textureLoader.load(
+      '/desktop_pc/textures/Material_baseColor.jpeg',
+      (texture) => {
+        console.log('Texture loaded', texture);
+      },
+      undefined,
+      (error) => {
+        console.error('Error loading texture', error);
+      }
+    );
+
+    textureLoader.load(
+      '/planet/textures/Clouds_baseColor.png',
+      (texture) => {
+        console.log('Planet texture loaded', texture);
+      },
+      undefined,
+      (error) => {
+        console.error('Error loading planet texture', error);
+      }
+    );
+
+
 
     loadingManager.onLoad = () => {
       setLoading(false);

@@ -21,7 +21,7 @@ const Hero = () => {
           <p className={`${styles.heroSubText} text-white-100 `}>
             a Full-Stack Web Developer . <br className='sm:block hidden' />
             My ultimate
-            goal is to use my passion for technology and past experiences to create innovativesolutions that have a positive impact.
+            goal is to use my passion for technology and past experiences to create innovative solutions that have a positive impact.
           </p>
         </div>
       </div>
@@ -30,7 +30,7 @@ const Hero = () => {
       <div className=" bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className=' mt-2 w-[30px] h-[54px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.dev
+            <motion.div
             animate={{
               y: [0, 24, 0]
             }}

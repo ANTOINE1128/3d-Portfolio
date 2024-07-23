@@ -55,7 +55,7 @@ const ProjectCard = ({
               >
                 <img
                   src={live_demo}
-                  alt='source code'
+                  alt='live demo'
                   className='w-1/2 h-1/2 object-contain'
                 />
               </div>
