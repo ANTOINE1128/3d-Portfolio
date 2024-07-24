@@ -3,18 +3,12 @@
 
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import {
-  Decal,
-  Float,
-  OrbitControls,
-  Preload,
-  useTexture,
-} from "@react-three/drei";
+import { Decal, Float, OrbitControls, Preload, useTexture } from "@react-three/drei";
 import PropTypes from 'prop-types';
 import CanvasLoader from "../Loader";
 
-const Ball = (props) => {
-  const [decal] = useTexture([props.imgUrl]);
+const Ball = ({ imgUrl }) => {
+  const [decal] = useTexture([imgUrl]);
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -41,7 +35,7 @@ const Ball = (props) => {
 };
 
 Ball.propTypes = {
-  imgUrl: PropTypes.string.isRequired,
+  imgUrl: PropTypes.string,
 };
 
 const BallCanvas = ({ icon }) => {
@@ -50,6 +44,9 @@ const BallCanvas = ({ icon }) => {
       frameloop='demand'
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
+      onCreated={({ gl }) => {
+        gl.setPixelRatio(window.devicePixelRatio); // Set pixel ratio to avoid high DPI issues
+      }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
@@ -62,7 +59,7 @@ const BallCanvas = ({ icon }) => {
 };
 
 BallCanvas.propTypes = {
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.string,
 };
 
 export default BallCanvas;

@@ -17,7 +17,7 @@ const ProjectCard = ({
   live_demo_link,
 }) => {
   const showLiveDemo = live_demo_link !== undefined && live_demo_link !== '';
-  const showSource_code_link = source_code_link !== undefined && source_code_link !== '';  
+  const showSource_code_link = source_code_link !== undefined && source_code_link !== '#';  
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -94,7 +94,7 @@ ProjectCard.propTypes = {
     })
   ).isRequired,
   image: PropTypes.string.isRequired,
-  source_code_link: PropTypes.string.isRequired,
+  source_code_link: PropTypes.string,
   live_demo_link: PropTypes.string,
 };
 
