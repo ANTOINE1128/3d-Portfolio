@@ -1,10 +1,8 @@
-/* eslint-disable react/no-unknown-property */
-/* eslint-disable no-undef */
-
 import { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
+import { useMediaQuery } from 'react-responsive';
 
 const Stars = (props) => {
   const ref = useRef();
@@ -37,11 +35,13 @@ const Stars = (props) => {
 };
 
 const StarsCanvas = () => {
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+
   return (
     <div className='w-full h-auto absolute inset-0 z-[-1]'>
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
-          <Stars />
+          {!isMobile && <Stars />} {/* Render Stars only if not mobile */}
         </Suspense>
 
         <Preload all />

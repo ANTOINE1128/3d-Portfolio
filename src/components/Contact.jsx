@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
+import { useMediaQuery } from 'react-responsive';
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -61,9 +61,11 @@ const Contact = () => {
       );
   };
 
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`xl:mt-12 flex ${isMobile ? 'flex-col' : 'xl:flex-row'} flex-col-reverse gap-10 overflow-hidden`}
       title='Rotate: Left-click. Move: Right-click.'
     >
       <motion.div
@@ -122,7 +124,7 @@ const Contact = () => {
       </motion.div>
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className={`xl:flex-1 xl:h-auto ${isMobile ? 'md:h-[350px]' : 'md:h-[550px]'} h-[350px]`}
       >
         <EarthCanvas />
       </motion.div>
